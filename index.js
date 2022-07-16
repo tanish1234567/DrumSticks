@@ -1,7 +1,7 @@
 let len = document.querySelectorAll(".box").length;
 for (let index = 0; index < len; index++) {
     document.querySelectorAll(".box")[index].addEventListener("click", () => {
-        createASound(document.querySelectorAll(".box")[index].innerHTML);
+        createASound(document.querySelectorAll(".box")[index].lastElementChild.innerHTML);
     })
 }
 document.addEventListener("keypress", (event) => {
